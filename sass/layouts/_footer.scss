@@ -1,0 +1,74 @@
+.footer {
+	background-color: var(--first-background-color);
+	padding: 60px 0;
+}
+
+.footer .container {
+	display: flex;
+	align-items: baseline;
+}
+
+.location {
+	display: flex;
+	flex-direction: column;
+	margin-right: 70px;
+}
+
+.footer .logo,
+.mail,
+.tel,
+.address__item__coor,
+.portfolio-list__project-card {
+	text-decoration: none;
+}
+
+.location .logo {
+	color: var(--fourth-color);
+	margin-bottom: 20px;
+
+	&:visited {
+		color: var(--fourth-color);
+	}
+}
+
+.address__item__coor {
+	color: var(--fourth-color);
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		color: var(--first-color);
+	}
+}
+
+.address__item__mail,
+.address__item__tel {
+	color: var(--third-color);
+
+	transition-property: color;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	&:hover,
+	&:focus {
+		color: var(--first-color);
+	}
+}
+
+.address__item__coor,
+address__item__mail,
+address__item__tel {
+	font-size: 14px;
+	line-height: 1.71;
+	letter-spacing: 0.03em;
+}
+.address__item + .address__item {
+	margin-top: 9px;
+}
+
+.address {
+	font-style: normal;
+}
