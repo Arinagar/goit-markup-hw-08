@@ -51,7 +51,10 @@
 
 .portfolio-list__card {
 	padding: 20px 24px;
-	flex-grow: 1;
+	@media screen and (min-width: 767.98px) {
+		flex-grow: 1;
+	}
+
 	border-left: 1px solid var(--border-color);
 	border-right: 1px solid var(--border-color);
 	border-bottom: 1px solid var(--border-color);

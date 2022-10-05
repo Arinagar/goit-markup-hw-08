@@ -2,7 +2,36 @@
 	background-color: var(--first-background-color);
 	text-align: center;
 	background-size: cover;
-	background: linear-gradient(var(--color-hero), var(--color-hero)), url("../images/hero.jpg"), no-repeat left top;
+
+	background-repeat: no-repeat;
+	background-position: center;
+
+	// Mobile screen
+	background-image: linear-gradient(var(--color-hero), var(--color-hero)), url("../../images/hero/hero_sm-@1x.jpg");
+
+	@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+		background-image: linear-gradient(var(--color-hero), var(--color-hero)), url("../../images/hero/hero_sm-@2x.jpg");
+	}
+
+	// Tablet
+	@media screen and (min-width: 481px) {
+		background-image: linear-gradient(var(--color-hero), var(--color-hero)), url("../../images/hero/hero_m-@1x.jpg");
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(var(--color-hero), var(--color-hero)), url("../../images/hero/hero_m-@2x.jpg");
+		}
+	}
+
+	// Desktop
+
+	@media screen and (min-width: 769px) {
+		background-image: linear-gradient(var(--color-hero), var(--color-hero)), url("../../images/hero/hero_lg-@1x.jpg");
+
+		@media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+			background-image: linear-gradient(var(--color-hero), var(--color-hero)), url("../../images/hero/hero_lg-@2x.jpg");
+		}
+	}
+
 	padding: 118px 0;
 	margin-left: auto;
 	margin-right: auto;

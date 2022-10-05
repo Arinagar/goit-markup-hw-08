@@ -226,6 +226,10 @@
 	line-height: 40px;
 	letter-spacing: 0.02em;
 	text-align: left;
+
+	@media screen and (max-width: 360px) {
+		font-size: 24px;
+	}
 }
 
 .mobile-menu__tel {
