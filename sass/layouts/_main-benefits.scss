@@ -1,5 +1,7 @@
 .benefits {
-	padding-bottom: 0;
+	@media screen and (min-width: 1200px) {
+		padding-bottom: 0;
+	}
 
 	&__wrap__title {
 		margin-bottom: 10px;
@@ -22,7 +24,7 @@
 		margin-bottom: 30px;
 	}
 
-	@media screen and (max-width: 768px) {
+	@media screen and (max-width: 767.98px) {
 		&__wrap__title {
 			text-align: center;
 		}

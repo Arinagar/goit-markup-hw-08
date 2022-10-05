@@ -1,9 +1,17 @@
+.social-container {
+	@media screen and (max-width: 767px) {
+		margin-top: 60px;
+	}
+	@media screen and (max-width: 1199px) {
+		text-align: center;
+	}
+}
+
 .social-container__title,
 .join-us__title {
 	text-align: center;
 	color: var(--fourth-color);
 	text-transform: uppercase;
-	text-align: left;
 	margin-bottom: 16px;
 	font-style: normal;
 	font-weight: 700;
@@ -13,6 +21,7 @@
 
 .social-container__list {
 	display: flex;
+	justify-content: center;
 	gap: 10px;
 }
 

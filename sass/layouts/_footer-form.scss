@@ -1,8 +1,19 @@
 .footer-form {
-	display: flex;
+	@media screen and (max-width: 1200px) {
+		text-align: center;
+	}
+
+	@media screen and (min-width: 1200px) {
+		display: flex;
+	}
 }
-.social-container {
-	margin-right: auto;
+.join-us {
+	@media screen and (max-width: 1199px) {
+		margin-top: 60px;
+	}
+	@media screen and (min-width: 1200px) {
+		margin-left: auto;
+	}
 }
 .email {
 	height: 50px;
@@ -23,6 +34,10 @@
 	align-items: center;
 	justify-content: center;
 	gap: 10px;
+	@media screen and (max-width: 1199px) {
+		margin: 0 auto;
+		margin-top: 20px;
+	}
 
 	color: var(--main-background-color);
 	background-color: var(--first-color);

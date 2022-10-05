@@ -5,6 +5,10 @@
 	font-weight: 700;
 	line-height: 1.15;
 	text-align: center;
+
+	@media screen and (max-width: 1199.98px) {
+		line-height: 1.5;
+	}
 }
 
 .human {
@@ -94,10 +98,18 @@
 .form-agreement {
 	display: flex;
 	align-items: center;
-	justify-content: center;
 	gap: 10px;
 	margin-top: 20px;
 	margin-bottom: 30px;
+
+	@media screen and (max-width: 1199.98px) {
+		font-size: 12px;
+		line-height: 1.16;
+	}
+
+	@media screen and (min-width: 1200px) {
+		justify-content: center;
+	}
 }
 
 .agreement-icon-uncheck {
@@ -118,6 +130,10 @@
 	transition: opacity;
 	transition-duration: 250ms;
 	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+	@media screen and (max-width: 767px) {
+		flex-grow: 1;
+	}
 }
 
 .agreement-checkbox:checked + .agreement-icon .agreement-icon-check {
@@ -143,7 +159,6 @@
 	font-weight: 700;
 	line-height: 1.86;
 	letter-spacing: 0.06em;
-	text-align: center;
 
 	color: var(--main-background-color);
 	background-color: var(--first-color);
