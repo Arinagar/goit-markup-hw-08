@@ -54,3 +54,17 @@
 	padding: 30px 32px;
 	background-color: var(--fourth-color);
 }
+
+.description {
+	font-weight: 700;
+	text-align: center;
+	@media screen and (max-width: 1199.98px) {
+		font-size: 28px;
+		line-height: 1.18;
+	}
+
+	@media screen and (min-width: 1200px) {
+		font-size: 36px;
+		line-height: 1.16;
+	}
+}

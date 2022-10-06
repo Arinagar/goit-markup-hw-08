@@ -143,6 +143,7 @@
 	flex-wrap: nowrap;
 	justify-content: flex-start;
 	margin-right: auto;
+	padding: 16px 0;
 
 	font-family: Raleway;
 	font-size: 24px;
@@ -195,14 +196,26 @@
 	background-color: var(--main-background-color);
 
 	transform: translateX(100%);
+	transition-property: transform;
+	transition-duration: 250ms;
+	transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
 	&.is-open {
 		transform: translateX(0);
+		transition-property: transform;
+		transition-duration: 250ms;
+		transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 	}
 }
 
 .mobile-menu__nav {
 	margin-bottom: auto;
+}
+
+.mobile-menu__network:not(:last-child) {
+	padding-right: 10px;
+	margin-right: 10px;
+	border-right: 1px solid #21212133;
 }
 
 .mobile-menu__link {
@@ -260,26 +273,5 @@
 .mobile-menu__net {
 	display: flex;
 	flex-wrap: wrap;
-	gap: 20px;
-}
-
-// ХЗ КАК СДЕЛАТЬ
-
-.mobile-menu__item {
-	position: relative;
-}
-
-.mobile-menu__social::after:not(:last-child) {
-	position: absolute;
-	content: "";
-	right: 0px;
-
-	width: 100%;
-	height: 4px;
-
-	border: 1px solid rgba(33, 33, 33, 0.2);
-	transform: rotate(90deg);
-
-	border-radius: 4px;
-	background-color: var(--first-color);
+	row-gap: 15px;
 }

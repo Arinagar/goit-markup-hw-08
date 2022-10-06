@@ -9,7 +9,9 @@
 
 .social-container__title,
 .join-us__title {
-	text-align: center;
+	@media screen and (max-width: 1199px) {
+		text-align: center;
+	}
 	color: var(--fourth-color);
 	text-transform: uppercase;
 	margin-bottom: 16px;
